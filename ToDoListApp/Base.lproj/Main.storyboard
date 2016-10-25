@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="QyN-x9-ub6">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Today's Errands-->
+        <scene sceneID="jh9-YN-WRv">
+            <objects>
+                <tableViewController id="8VO-bI-iDE" customClass="MyTableViewController" customModule="ToDoListApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" sectionHeaderHeight="22" sectionFooterHeight="22" id="bFk-7E-Uke">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ToDoCell" rowHeight="72" id="awL-qf-oyh" customClass="MyTableViewCell" customModule="ToDoListApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="86" width="320" height="72"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="awL-qf-oyh" id="TUp-UE-xKJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="71.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oGC-KA-RqA">
+                                            <rect key="frame" x="6" y="6" width="60" height="60"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ItemName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cz2-AC-09Q">
+                                            <rect key="frame" x="72" y="6" width="200" height="30"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ItemType" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcI-PU-vCS">
+                                            <rect key="frame" x="72" y="36" width="200" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cellImage" destination="oGC-KA-RqA" id="rPU-IH-Hkr"/>
+                                    <outlet property="cellItemName" destination="cz2-AC-09Q" id="wKe-rK-mBY"/>
+                                    <outlet property="cellItemType" destination="WcI-PU-vCS" id="676-iy-E0w"/>
+                                    <segue destination="429-sx-Y5A" kind="push" id="Sbx-fO-v7H"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="8VO-bI-iDE" id="2eA-3p-SKr"/>
+                            <outlet property="delegate" destination="8VO-bI-iDE" id="4Z7-AS-afa"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Today's Errands" id="NAe-7W-8I8"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mmC-zL-83I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="641" y="360"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6KZ-Le-i5Z">
+            <objects>
+                <viewController id="429-sx-Y5A" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mq8-DI-zrO"/>
+                        <viewControllerLayoutGuide type="bottom" id="vpS-wh-yM6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CAu-qo-qOL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2d4-do-Xlp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zuA-vB-8b9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1217" y="371"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2cD-gf-K4l">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QyN-x9-ub6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2KR-fb-xzb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8VO-bI-iDE" kind="relationship" relationship="rootViewController" id="OKa-cZ-1hC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G3y-Vg-fa3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="109" y="360"/>
+        </scene>
+    </scenes>
+</document>
