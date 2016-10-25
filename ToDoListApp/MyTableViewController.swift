@@ -10,9 +10,12 @@ import UIKit
 
 class MyTableViewController: UITableViewController {
     
-    var ToDoItems = ["groceries", "laundry", "car wash", "homework", "make dinner"]
-    var ToDoImages = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"]
-    var ToDoTimes = ["10:00am", "11:am", "12:30pm", "1:00pm", "2:45pm" ]
+    var Movies = ["groceries", "laundry", "car wash", "homework", "make dinner"]
+    var MovieImage = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"]
+    var MovieGenre = ["10:00am", "11:am", "12:30pm", "1:00pm", "2:45pm" ]
+    var MovieYear = ["1992", "1983", "1999", "2000", "2011" ]
+    var MovieRating = ["G", "PG", "G", "G", "PG" ]
+
     var CheckState = [false, false, false, false, false]
 
     override func viewDidLoad() {
@@ -43,7 +46,7 @@ class MyTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return ToDoItems.count
+        return Movies.count
     }
 
     
@@ -54,15 +57,15 @@ class MyTableViewController: UITableViewController {
         // Configure the cell...
        // cell.textLabel?.text = ToDoItems[indexPath.row]
         //cell.imageView?.image = UIImage(named: "items.jpg")
-        cell.cellItemName?.text = ToDoItems[indexPath.row]
-        cell.cellImage?.image = UIImage(named: ToDoImages[indexPath.row])
-        cell.cellItemType?.text = ToDoTimes[indexPath.row]
+        cell.cellItemName?.text = Movies[indexPath.row]
+        cell.cellImage?.image = UIImage(named: MovieImage[indexPath.row])
+        cell.cellItemType?.text = MovieGenre[indexPath.row]
 
         return cell
     }
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let selectedItem = ToDoItems[indexPath.row]
+        let selectedItem = Movies[indexPath.row]
         let msgAlert = UIAlertView(title: "Row Selected", message: selectedItem, delegate: nil, cancelButtonTitle: "ok")
         msgAlert.show()
         
@@ -89,9 +92,9 @@ class MyTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
 
-        ToDoItems.removeAtIndex(indexPath.row)
-        ToDoTimes.removeAtIndex(indexPath.row)
-ToDoImages.removeAtIndex(indexPath.row)
+        Movies.removeAtIndex(indexPath.row)
+        MovieGenre.removeAtIndex(indexPath.row)
+MovieImage.removeAtIndex(indexPath.row)
 CheckState.removeAtIndex(indexPath.row)
 
 self.tableView.reloadData()
@@ -112,14 +115,33 @@ self.tableView.reloadData()
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-    }
-    */
+            // Get the new view controller using segue.destinationViewController.
+            // Pass the selected object to the new view controller.
+            if (segue.identifier == "ShowMovieDetail")
+            {
+                if let indPath = self.tableView.indexPathForSelectedRow
+                {
+                    let detailViewController = segue.destinationViewController as! MyDetailViewController
+                    
+                    detailViewController.MoviesGenre = MovieGenre[indPath.row]
+                    detailViewController.MoviesYear = MovieYear[indPath.row]
+                    detailViewController.MoviesRating = MovieRating[indPath.row]
+                    detailViewController.MoviesImage = MovieImage[indPath.row]
 
-}
+                    
+                    
+                }
+            }
+        }
+    }
+    
+    
+
+

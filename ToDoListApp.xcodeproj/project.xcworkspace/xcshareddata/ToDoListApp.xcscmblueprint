@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "ECB0AB4C3A4E997E834C7BBC9A1054E0AD963415",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "ECB0AB4C3A4E997E834C7BBC9A1054E0AD963415" : 0,
+    "42E524B01F5EEFB34027DCCE822F49A2B4B9928D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "716171FA-18BC-4063-815A-8E192880236F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "ECB0AB4C3A4E997E834C7BBC9A1054E0AD963415" : "ToDoListApp\/",
+    "42E524B01F5EEFB34027DCCE822F49A2B4B9928D" : "..\/Client-Side_JavaScript\/assignments"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ToDoListApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ToDoListApp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/navsreks\/CIS89C-assignment.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "42E524B01F5EEFB34027DCCE822F49A2B4B9928D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/navsreks\/MovieListApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ECB0AB4C3A4E997E834C7BBC9A1054E0AD963415"
+    }
+  ]
+}

@@ -14,6 +14,7 @@
 		C27D18E51DB9C46300FFD70E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27D18E31DB9C46300FFD70E /* Main.storyboard */; };
 		C27D18E71DB9C46300FFD70E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C27D18E61DB9C46300FFD70E /* Images.xcassets */; };
 		C27D18EA1DB9C46300FFD70E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27D18E81DB9C46300FFD70E /* LaunchScreen.storyboard */; };
+		C2F4B95B1DBF330200F333FE /* MyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F4B95A1DBF330200F333FE /* MyDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C27D18E61DB9C46300FFD70E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C27D18E91DB9C46300FFD70E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C27D18EB1DB9C46300FFD70E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2F4B95A1DBF330200F333FE /* MyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				C27D18DF1DB9C46300FFD70E /* AppDelegate.swift */,
 				C27D18E31DB9C46300FFD70E /* Main.storyboard */,
+				C2F4B95A1DBF330200F333FE /* MyDetailViewController.swift */,
 				C20F3E501DBB26BA00948346 /* MyTableViewCell.swift */,
 				C20F3E4E1DBB1B5200948346 /* items.jpg */,
 				C27D18E61DB9C46300FFD70E /* Images.xcassets */,
@@ -145,6 +148,7 @@
 				C27D18E01DB9C46300FFD70E /* AppDelegate.swift in Sources */,
 				C20F3E4D1DBB159A00948346 /* MyTableViewController.swift in Sources */,
 				C20F3E511DBB26BA00948346 /* MyTableViewCell.swift in Sources */,
+				C2F4B95B1DBF330200F333FE /* MyDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
