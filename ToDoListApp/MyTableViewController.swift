@@ -22,18 +22,18 @@ class MyTableViewController: UITableViewController {
                       "hercules.jpg", "princess.jpg", "puss.jpg", "howls.jpg", "peanuts.jpg", "bigHero.jpg"]
     
     
-    var MovieGenre = ["Animation/ Kids & Family", "Animation/ Comedy/ kids & Family", "Action & Adventure/ Animation/ Comedy",
-                      "Animation/ Kids & Family/ Sci-Fi/ Fantasy", "Animation/ Comedy/ Kids & Family", "Drama/ Animation/ Fantasy/ Sci-Fi",
-                      "Animation/ Comedy/ Fantasy", "Animation/Drama/ Romance", "Action & Adventure/ Drama", "Action & Adventure/ Kids & Family", "Animation/ Kids & Family/ Sci-Fi", "Animation/ Kids & Family", "Animation/ Fantasy/ Romance",
-                      "Scr-Fi/ Animation/ Adventure", "Animation/ Comedy", "Animation/ Fantasy", "Animation", "Animation", "Animation",
-                      "Action/ Animation/ Comedy", "Fairy tale/ Fantasy/ Romance", "Picture book/ Fairy tale/ Children’s literature",
-                      "Action/ Family/ Drama/ Adventure", "Adventure/ Animation/ Family", "Animation/ Comedy/ Action/ Family"]
+    var MovieGenre = ["Genre: Animation/ Kids & Family", "Genre: Animation/ Comedy/ kids & Family", "Genre: Action & Adventure/ Animation/ Comedy",
+                      "Genre: Animation/ Kids & Family/ Sci-Fi/ Fantasy", "Genre: Animation/ Comedy/ Kids & Family", "Genre: Drama/ Animation/ Fantasy/ Sci-Fi",
+                      "Genre: Animation/ Comedy/ Fantasy", "Genre: Animation/Drama/ Romance", "Genre: Action & Adventure/ Drama", "Genre: Action & Adventure/ Kids & Family", "Genre: Animation/ Kids & Family/ Sci-Fi", "Genre: Animation/ Kids & Family", "Genre: Animation/ Fantasy/ Romance",
+                      "Genre: Scr-Fi/ Animation/ Adventure", "Genre: Animation/ Comedy", "Genre: Animation/ Fantasy", "Genre: Animation", "Genre: Animation", "Genre: Animation",
+                      "Genre: Action/ Animation/ Comedy", "Genre: Fairy tale/ Fantasy/ Romance", "Genre: Picture book/ Fairy tale/ Children’s literature",
+                      "Genre: Action/ Family/ Drama/ Adventure", "Genre: Adventure/ Animation/ Family", "Genre: Animation/ Comedy/ Action/ Family"]
     
     
-    var MovieYear = ["2015", "2003", "2014", "2010", "2004", "2001", "2001", "1991", "1994", "1992", "1998", "2013", "1988", "1968", "2015",
-                     "2016", "2016", "2011", "2002", "1997", "2009", "2011", "2005", "2015", "2014"]
-    var MovieRating = ["G", "G", "PG", "PG", "PG", "PG", "G", "G", "G", "G", "G", "PG", "G", "G",
-                       "PG", "PG", "PG", "G", "PG", "G", "G", "PG", "PG", "G", "PG"]
+    var MovieYear = ["Year:   2015", "Year:   2003", "Year:   2014", "Year:   2010", "Year:   2004", "Year:   2001", "Year:   2001", "Year:   1991", "Year:   1994", "Year:   1992", "Year:   1998", "Year:   2013", "Year:   1988", "Year:   1968", "Year:   2015",
+                     "Year:   2016", "Year:   2016", "Year:   2011", "Year:   2002", "Year:   1997", "Year:   2009", "Year:   2011", "Year:   2005", "Year:   2015", "Year:   2014"]
+    var MovieRating = ["Rated: G", "Rated: G", "Rated: PG", "Rated: PG", "Rated: PG", "Rated: PG", "Rated: G", "Rated: G", "Rated: G", "Rated: G", "Rated: G", "Rated: PG", "Rated: G", "Rated: G",
+                       "Rated: PG", "Rated: PG", "Rated: PG", "Rated: G", "Rated: PG", "Rated: G", "Rated: G", "Rated: PG", "Rated: PG", "Rated: G", "Rated: PG"]
 
     var CheckState = [false, false, false, false, false, true, true, true, false, false, false, false,
                       false, false, false, false, false, true, true, true, false, false, false, false, true]
@@ -83,6 +83,7 @@ class MyTableViewController: UITableViewController {
        // cell.cellItemType?.text = MovieGenre[indexPath.row]
 
         return cell
+        
     }
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
