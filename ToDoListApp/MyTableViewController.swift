@@ -10,13 +10,33 @@ import UIKit
 
 class MyTableViewController: UITableViewController {
     
-    var Movies = ["groceries", "laundry", "car wash", "homework", "make dinner"]
-    var MovieImage = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"]
-    var MovieGenre = ["10:00am", "11:am", "12:30pm", "1:00pm", "2:45pm" ]
-    var MovieYear = ["1992", "1983", "1999", "2000", "2011" ]
-    var MovieRating = ["G", "PG", "G", "G", "PG" ]
+    var Movies = ["Inside Out", "Finding Nemo", "The Lego Movie", "How to Train your Dragon", "The Incredibles", "Spirited Away",
+                  "Monsters Inc", "Beauty and the Beast", "The Lion King", "Alladin", "A Bug's Life", "Frozen", "The Little Mermaid",
+                  "The Yellow Submarine", "Shaun The Sheep", "The Little Prince", "Pete's Dragon", "Winnie the Pooh", "Lilo and Stitch",
+                  "Hercules", "The Princess and the Frog", "Puss in Boots", "Howl's Moving Castle", "The Peanuts's Movie", "Big Hero 6"]
+    
+    
+    var MovieImage = ["insideOut.jpg", "nemo.jpg", "lego.jpg", "trainDragon.jpg", "incredibles.jpg", "spiritedAway.jpg",
+                      "monsters.jpg", "beautyAndTheBeast.jpg", "lionKing.jpg", "alladin.jpg", "bugsLife.jpg", "frozen.jpg", "mermaid.jpg",
+                      "submarine.jpg", "shaunTheSheep", "littlePrince.jpg", "petesDragon.jpg", "winnie.jpg", "lilo.jpg",
+                      "hercules.jpg", "princess.jpg", "puss.jpg", "howls.jpg", "peanuts.jpg", "bigHero.jpg"]
+    
+    
+    var MovieGenre = ["Animation/ Kids & Family", "Animation/ Comedy/ kids & Family", "Action & Adventure/ Animation/ Comedy",
+                      "Animation/ Kids & Family/ Sci-Fi/ Fantasy", "Animation/ Comedy/ Kids & Family", "Drama/ Animation/ Fantasy/ Sci-Fi",
+                      "Animation/ Comedy/ Fantasy", "Animation/Drama/ Romance", "Action & Adventure/ Drama", "Action & Adventure/ Kids & Family", "Animation/ Kids & Family/ Sci-Fi", "Animation/ Kids & Family", "Animation/ Fantasy/ Romance",
+                      "Scr-Fi/ Animation/ Adventure", "Animation/ Comedy", "Animation/ Fantasy", "Animation", "Animation", "Animation",
+                      "Action/ Animation/ Comedy", "Fairy tale/ Fantasy/ Romance", "Picture book/ Fairy tale/ Children’s literature",
+                      "Action/ Family/ Drama/ Adventure", "Adventure/ Animation/ Family", "Animation/ Comedy/ Action/ Family"]
+    
+    
+    var MovieYear = ["2015", "2003", "2014", "2010", "2004", "2001", "2001", "1991", "1994", "1992", "1998", "2013", "1988", "1968", "2015",
+                     "2016", "2016", "2011", "2002", "1997", "2009", "2011", "2005", "2015", "2014"]
+    var MovieRating = ["G", "G", "PG", "PG", "PG", "PG", "G", "G", "G", "G", "G", "PG", "G", "G",
+                       "PG", "PG", "PG", "G", "PG", "G", "G", "PG", "PG", "G", "PG"]
 
-    var CheckState = [false, false, false, false, false]
+    var CheckState = [false, false, false, false, false, true, true, true, false, false, false, false,
+                      false, false, false, false, false, true, true, true, false, false, false, false, true]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,9 +77,10 @@ class MyTableViewController: UITableViewController {
         // Configure the cell...
        // cell.textLabel?.text = ToDoItems[indexPath.row]
         //cell.imageView?.image = UIImage(named: "items.jpg")
+        cell.cellItemName.numberOfLines = 2
         cell.cellItemName?.text = Movies[indexPath.row]
         cell.cellImage?.image = UIImage(named: MovieImage[indexPath.row])
-        cell.cellItemType?.text = MovieGenre[indexPath.row]
+       // cell.cellItemType?.text = MovieGenre[indexPath.row]
 
         return cell
     }

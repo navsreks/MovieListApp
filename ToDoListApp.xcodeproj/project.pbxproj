@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C20F3E4D1DBB159A00948346 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20F3E4C1DBB159A00948346 /* MyTableViewController.swift */; };
-		C20F3E4F1DBB1B5200948346 /* items.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C20F3E4E1DBB1B5200948346 /* items.jpg */; };
 		C20F3E511DBB26BA00948346 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20F3E501DBB26BA00948346 /* MyTableViewCell.swift */; };
 		C27D18E01DB9C46300FFD70E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27D18DF1DB9C46300FFD70E /* AppDelegate.swift */; };
 		C27D18E51DB9C46300FFD70E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27D18E31DB9C46300FFD70E /* Main.storyboard */; };
@@ -19,7 +18,6 @@
 
 /* Begin PBXFileReference section */
 		C20F3E4C1DBB159A00948346 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
-		C20F3E4E1DBB1B5200948346 /* items.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = items.jpg; path = "../../../Client-Side_JavaScript/assignments/items.jpg"; sourceTree = "<group>"; };
 		C20F3E501DBB26BA00948346 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		C27D18DC1DB9C46300FFD70E /* ToDoListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27D18DF1DB9C46300FFD70E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +62,6 @@
 				C27D18E31DB9C46300FFD70E /* Main.storyboard */,
 				C2F4B95A1DBF330200F333FE /* MyDetailViewController.swift */,
 				C20F3E501DBB26BA00948346 /* MyTableViewCell.swift */,
-				C20F3E4E1DBB1B5200948346 /* items.jpg */,
 				C27D18E61DB9C46300FFD70E /* Images.xcassets */,
 				C27D18E81DB9C46300FFD70E /* LaunchScreen.storyboard */,
 				C27D18EB1DB9C46300FFD70E /* Info.plist */,
@@ -133,7 +130,6 @@
 			files = (
 				C27D18EA1DB9C46300FFD70E /* LaunchScreen.storyboard in Resources */,
 				C27D18E71DB9C46300FFD70E /* Images.xcassets in Resources */,
-				C20F3E4F1DBB1B5200948346 /* items.jpg in Resources */,
 				C27D18E51DB9C46300FFD70E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
