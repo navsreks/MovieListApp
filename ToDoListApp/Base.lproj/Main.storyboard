@@ -70,11 +70,10 @@
                                     <constraint firstAttribute="height" constant="275" id="CuU-NK-xlQ"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Genre: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4Q-Vn-iAC">
+                            <label contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Genre: " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4Q-Vn-iAC">
                                 <rect key="frame" x="0.0" y="338" width="375" height="70"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="J4Q-Vn-iAC" secondAttribute="height" multiplier="40:7" id="E7F-oo-qf0"/>
                                     <constraint firstAttribute="width" secondItem="J4Q-Vn-iAC" secondAttribute="height" multiplier="320:71" id="nup-o4-VYj"/>
                                     <constraint firstAttribute="width" constant="320" id="q52-nB-gB6"/>
                                 </constraints>
@@ -82,13 +81,12 @@
                                 <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Year: " lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5PR-k8-1lR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Year: " lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5PR-k8-1lR">
                                 <rect key="frame" x="0.0" y="398" width="375" height="65"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="5PR-k8-1lR" secondAttribute="height" multiplier="64:13" id="Jkr-Zf-25M"/>
                                     <constraint firstAttribute="width" constant="320" id="SIB-hO-DMe"/>
-                                    <constraint firstAttribute="width" secondItem="5PR-k8-1lR" secondAttribute="height" multiplier="40:7" id="gjk-jA-sGZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
                                 <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -100,7 +98,6 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="5aG-wl-kYC"/>
                                     <constraint firstAttribute="width" secondItem="HRM-bH-tgH" secondAttribute="height" multiplier="320:67" id="M2z-xC-ktj"/>
-                                    <constraint firstAttribute="width" secondItem="HRM-bH-tgH" secondAttribute="height" multiplier="320:59" id="fq7-bN-x2M"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
                                 <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -135,7 +132,7 @@
         <scene sceneID="2cD-gf-K4l">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QyN-x9-ub6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Movie List" id="UnS-PG-Ktl"/>
+                    <tabBarItem key="tabBarItem" title="Movie List" selectedImage="movie" id="UnS-PG-Ktl"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2KR-fb-xzb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -154,7 +151,7 @@
         <scene sceneID="tg7-B1-VuL">
             <objects>
                 <navigationController title="Settings" id="fgc-nR-v70" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" id="qnE-AL-mn5"/>
+                    <tabBarItem key="tabBarItem" title="Settings" selectedImage="images" id="qnE-AL-mn5"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GFh-7Y-smw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -223,4 +220,8 @@
             <point key="canvasLocation" x="33" y="702"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="images" width="102" height="102"/>
+        <image name="movie" width="512" height="512"/>
+    </resources>
 </document>
