@@ -127,10 +127,10 @@ class MyTableViewController: UITableViewController {
 
         Movies.removeAtIndex(indexPath.row)
         MovieGenre.removeAtIndex(indexPath.row)
-MovieImage.removeAtIndex(indexPath.row)
-CheckState.removeAtIndex(indexPath.row)
+        MovieImage.removeAtIndex(indexPath.row)
+        CheckState.removeAtIndex(indexPath.row)
 
-self.tableView.reloadData()
+        self.tableView.reloadData()
 
     }
     /*

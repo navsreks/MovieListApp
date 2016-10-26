@@ -22,11 +22,12 @@ class MyDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
-        self.genre.text = self.MoviesGenre
-        self.year.text = self.MoviesYear
-        self.rating.text = self.MoviesRating
+        self.genre.text = "GENRE: " + self.MoviesGenre
+        self.year.text = "YEAR: " + self.MoviesYear
+        self.rating.text = "RATING: " + self.MoviesRating
         self.movieImage.image = UIImage(named: self.MoviesImage)
 
     }
