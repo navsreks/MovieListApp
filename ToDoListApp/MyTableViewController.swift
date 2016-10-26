@@ -87,8 +87,8 @@ class MyTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let selectedItem = Movies[indexPath.row]
-        let msgAlert = UIAlertView(title: "Row Selected", message: selectedItem, delegate: nil, cancelButtonTitle: "ok")
-        msgAlert.show()
+        //let msgAlert = UIAlertView(title: "Row Selected", message: selectedItem, delegate: nil, cancelButtonTitle: "ok")
+        //msgAlert.show()
         
         CheckState[indexPath.row] = !(CheckState[indexPath.row])
         if (CheckState[indexPath.row]){
