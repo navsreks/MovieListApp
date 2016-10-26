@@ -10,31 +10,42 @@ import UIKit
 
 class MyTableViewController: UITableViewController {
     
-    var Movies = ["Inside Out", "Finding Nemo", "The Lego Movie", "How to Train your Dragon", "The Incredibles", "Spirited Away",
-                  "Monsters Inc", "Beauty and the Beast", "The Lion King", "Alladin", "A Bug's Life", "Frozen", "The Little Mermaid",
-                  "The Yellow Submarine", "Shaun The Sheep", "The Little Prince", "Pete's Dragon", "Winnie the Pooh", "Lilo and Stitch",
-                  "Hercules", "The Princess and the Frog", "Puss in Boots", "Howl's Moving Castle", "The Peanuts's Movie", "Big Hero 6"]
+    var Movies = ["Alladin", "A Bug's Life", "Beauty and the Beast", "Big Hero 6", "Finding Nemo", "Frozen",
+                  "Hercules", "How to Train your Dragon", "Howl's Moving Castle", "Inside Out",  "Lilo and Stitch", "Monsters Inc",
+                  "Pete's Dragon", "Puss in Boots",  "Shaun The Sheep", "Spirited Away", "The Incredibles", "The Lego Movie",
+                  "The Lion King",  "The Little Mermaid", "The Little Prince", "The Peanuts's Movie", "The Princess and the Frog",
+                  "The Yellow Submarine", "Winnie the Pooh"]
     
     
-    var MovieImage = ["insideOut.jpg", "nemo.jpg", "lego.jpg", "trainDragon.jpg", "incredibles.jpg", "spiritedAway.jpg",
-                      "monsters.jpg", "beautyAndTheBeast.jpg", "lionKing.jpg", "alladin.jpg", "bugsLife.jpg", "frozen.jpg", "mermaid.jpg",
-                      "submarine.jpg", "shaunTheSheep", "littlePrince.jpg", "petesDragon.jpg", "winnie.jpg", "lilo.jpg",
-                      "hercules.jpg", "princess.jpg", "puss.jpg", "howls.jpg", "peanuts.jpg", "bigHero.jpg"]
+    var MovieImage = ["alladin.jpg", "bugsLife.jpg", "beautyAndTheBeast.jpg", "bigHero.jpg", "nemo.jpg", "frozen.jpg",
+                      "hercules.jpg", "trainDragon.jpg", "howls.jpg", "insideOut.jpg", "lilo.jpg", "monsters.jpg",
+                      "petesDragon.jpg", "puss.jpg", "shaunTheSheep", "spiritedAway.jpg", "incredibles.jpg", "lego.jpg",
+                      "lionKing.jpg", "mermaid.jpg", "littlePrince.jpg", "peanuts.jpg", "princess.jpg",
+                      "submarine.jpg", "winnie.jpg"]
+    
+    var MovieGenre = ["Action & Adventure/ Kids & Family", "Animation/ Kids & Family/ Sci-Fi", "Animation/Drama/ Romance",
+                      "Animation/ Comedy/ Action/ Family", "Animation/ Comedy/ kids & Family", "Animation/ Kids & Family",
+                      "Action/ Animation/ Comedy", "Animation/ Kids & Family/ Sci-Fi/ Fantasy", "Action/ Family/ Drama/ Adventure",
+                      "Animation/ Kids & Family", "Animation", "Animation/ Comedy/ Fantasy", "Animation",
+                      "Picture book/ Fairy tale/ Children’s literature", "Animation/ Comedy", "Drama/ Animation/ Fantasy/ Sci-Fi",
+                      "Animation/ Comedy/ Kids & Family", "Action & Adventure/ Animation/ Comedy", "Action & Adventure/ Drama",
+                      "Animation/ Fantasy/ Romance", "Sci-Fi/ Animation/ Adventure",
+                      "Adventure/ Animation/ Family", "Fairy tale/ Fantasy/ Romance", "Animation/ Fantasy", "Animation" ]
     
     
-    var MovieGenre = ["Genre: Animation/ Kids & Family", "Genre: Animation/ Comedy/ kids & Family", "Genre: Action & Adventure/ Animation/ Comedy",
-                      "Genre: Animation/ Kids & Family/ Sci-Fi/ Fantasy", "Genre: Animation/ Comedy/ Kids & Family", "Genre: Drama/ Animation/ Fantasy/ Sci-Fi",
-                      "Genre: Animation/ Comedy/ Fantasy", "Genre: Animation/Drama/ Romance", "Genre: Action & Adventure/ Drama", "Genre: Action & Adventure/ Kids & Family", "Genre: Animation/ Kids & Family/ Sci-Fi", "Genre: Animation/ Kids & Family", "Genre: Animation/ Fantasy/ Romance",
-                      "Genre: Scr-Fi/ Animation/ Adventure", "Genre: Animation/ Comedy", "Genre: Animation/ Fantasy", "Genre: Animation", "Genre: Animation", "Genre: Animation",
-                      "Genre: Action/ Animation/ Comedy", "Genre: Fairy tale/ Fantasy/ Romance", "Genre: Picture book/ Fairy tale/ Children’s literature",
-                      "Genre: Action/ Family/ Drama/ Adventure", "Genre: Adventure/ Animation/ Family", "Genre: Animation/ Comedy/ Action/ Family"]
+    var MovieYear = ["1992", "1998", "1991", "2014", "2003", "2013",
+                     "1997", "2010", "2005", "2015",  "2002", "2001",
+                     "2016", "2011", "2015", "2001", "2004", "2014",
+                     "1994", "1988", "2016", "2015", "2009",
+                     "1968", "2011" ]
     
     
-    var MovieYear = ["Year:   2015", "Year:   2003", "Year:   2014", "Year:   2010", "Year:   2004", "Year:   2001", "Year:   2001", "Year:   1991", "Year:   1994", "Year:   1992", "Year:   1998", "Year:   2013", "Year:   1988", "Year:   1968", "Year:   2015",
-                     "Year:   2016", "Year:   2016", "Year:   2011", "Year:   2002", "Year:   1997", "Year:   2009", "Year:   2011", "Year:   2005", "Year:   2015", "Year:   2014"]
-    var MovieRating = ["Rated: G", "Rated: G", "Rated: PG", "Rated: PG", "Rated: PG", "Rated: PG", "Rated: G", "Rated: G", "Rated: G", "Rated: G", "Rated: G", "Rated: PG", "Rated: G", "Rated: G",
-                       "Rated: PG", "Rated: PG", "Rated: PG", "Rated: G", "Rated: PG", "Rated: G", "Rated: G", "Rated: PG", "Rated: PG", "Rated: G", "Rated: PG"]
-
+    var MovieRating = ["G", "G", "G", "PG", "G", "PG",
+                       "G", "PG", "PG", "G", "PG", "G",
+                       "PG", "PG", "PG", "PG", "PG", "PG",
+                       "G", "G", "PG", "G", "G",
+                       "G", "G"]
+    
     var CheckState = [false, false, false, false, false, true, true, true, false, false, false, false,
                       false, false, false, false, false, true, true, true, false, false, false, false, true]
 
