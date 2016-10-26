@@ -166,10 +166,10 @@
             </objects>
             <point key="canvasLocation" x="641" y="1059"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Settings Table View Controller-->
         <scene sceneID="IpQ-OB-2no">
             <objects>
-                <tableViewController id="1Bh-MF-bis" sceneMemberID="viewController">
+                <tableViewController id="1Bh-MF-bis" customClass="SettingsTableViewController" customModule="ToDoListApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="140" sectionHeaderHeight="28" sectionFooterHeight="28" id="oOD-9P-KL7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
