@@ -46,8 +46,8 @@ class MyTableViewController: UITableViewController {
                        "G", "G", "PG", "G", "G",
                        "G", "G"]
     
-    var CheckState = [false, false, false, false, false, true, true, true, false, false, false, false,
-                      false, false, false, false, false, true, true, true, false, false, false, false, true]
+    var CheckState = [false, false, false, false, false, false, false, false, false, false, false, false,
+                      false, false, false, false, false, false, false, false, false, false, false, false, false]
 
     override func viewDidLoad() {
         super.viewDidLoad()

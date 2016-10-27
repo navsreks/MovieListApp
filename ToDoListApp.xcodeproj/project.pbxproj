@@ -15,6 +15,8 @@
 		C27D18EA1DB9C46300FFD70E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27D18E81DB9C46300FFD70E /* LaunchScreen.storyboard */; };
 		C2F4B95B1DBF330200F333FE /* MyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F4B95A1DBF330200F333FE /* MyDetailViewController.swift */; };
 		C2F4B9811DC105FE00F333FE /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F4B9801DC105FE00F333FE /* SettingsTableViewController.swift */; };
+		F390D93D1DC17284005AB5B1 /* MySettingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F390D93C1DC17284005AB5B1 /* MySettingDetailsViewController.swift */; };
+		F390D93F1DC179BD005AB5B1 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F390D93E1DC179BD005AB5B1 /* SettingTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		C27D18EB1DB9C46300FFD70E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2F4B95A1DBF330200F333FE /* MyDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDetailViewController.swift; sourceTree = "<group>"; };
 		C2F4B9801DC105FE00F333FE /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		F390D93C1DC17284005AB5B1 /* MySettingDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySettingDetailsViewController.swift; sourceTree = "<group>"; };
+		F390D93E1DC179BD005AB5B1 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingTableViewCell.swift; path = ../SettingTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +64,10 @@
 		C27D18DE1DB9C46300FFD70E /* ToDoListApp */ = {
 			isa = PBXGroup;
 			children = (
+				F390D93E1DC179BD005AB5B1 /* SettingTableViewCell.swift */,
 				C27D18DF1DB9C46300FFD70E /* AppDelegate.swift */,
 				C27D18E31DB9C46300FFD70E /* Main.storyboard */,
+				F390D93C1DC17284005AB5B1 /* MySettingDetailsViewController.swift */,
 				C2F4B9801DC105FE00F333FE /* SettingsTableViewController.swift */,
 				C2F4B95A1DBF330200F333FE /* MyDetailViewController.swift */,
 				C20F3E501DBB26BA00948346 /* MyTableViewCell.swift */,
@@ -146,8 +152,10 @@
 			files = (
 				C27D18E01DB9C46300FFD70E /* AppDelegate.swift in Sources */,
 				C2F4B9811DC105FE00F333FE /* SettingsTableViewController.swift in Sources */,
+				F390D93F1DC179BD005AB5B1 /* SettingTableViewCell.swift in Sources */,
 				C20F3E4D1DBB159A00948346 /* MyTableViewController.swift in Sources */,
 				C20F3E511DBB26BA00948346 /* MyTableViewCell.swift in Sources */,
+				F390D93D1DC17284005AB5B1 /* MySettingDetailsViewController.swift in Sources */,
 				C2F4B95B1DBF330200F333FE /* MyDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

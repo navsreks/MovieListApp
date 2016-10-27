@@ -121,7 +121,7 @@
         <scene sceneID="2cD-gf-K4l">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QyN-x9-ub6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Movie List" selectedImage="movie" id="UnS-PG-Ktl"/>
+                    <tabBarItem key="tabBarItem" title="Movie List" image="movie" selectedImage="movie" id="UnS-PG-Ktl"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2KR-fb-xzb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -140,7 +140,7 @@
         <scene sceneID="tg7-B1-VuL">
             <objects>
                 <navigationController title="Settings" id="fgc-nR-v70" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" selectedImage="images" id="qnE-AL-mn5"/>
+                    <tabBarItem key="tabBarItem" selectedImage="images" systemItem="more" id="qnE-AL-mn5"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GFh-7Y-smw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -157,20 +157,20 @@
         <scene sceneID="IpQ-OB-2no">
             <objects>
                 <tableViewController id="1Bh-MF-bis" customClass="SettingsTableViewController" customModule="ToDoListApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="140" sectionHeaderHeight="28" sectionFooterHeight="28" id="oOD-9P-KL7">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="61" sectionHeaderHeight="28" sectionFooterHeight="28" id="oOD-9P-KL7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="140" id="ZMT-6U-eKM">
-                                <rect key="frame" x="0.0" y="92" width="320" height="140"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="settings" rowHeight="61" id="ZMT-6U-eKM" customClass="MyTableViewCell" customModule="ToDoListApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="320" height="61"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZMT-6U-eKM" id="sRN-9Z-RiD">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="139"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="60"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUm-AH-eeJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7a-qQ-kE3">
+                                            <rect key="frame" x="36" y="4" width="214" height="52"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -178,7 +178,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="RaT-hZ-TQ6" kind="push" id="nT9-QD-5H2"/>
+                                    <segue destination="RaT-hZ-TQ6" kind="push" identifier="settingsDetails" id="Zkf-Lv-Xyd"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -193,10 +193,10 @@
             </objects>
             <point key="canvasLocation" x="1173" y="1059"/>
         </scene>
-        <!--View Controller-->
+        <!--Details-->
         <scene sceneID="FgF-kx-5GH">
             <objects>
-                <viewController id="RaT-hZ-TQ6" sceneMemberID="viewController">
+                <viewController id="RaT-hZ-TQ6" customClass="MySettingDetailsViewController" customModule="ToDoListApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bec-vC-seT"/>
                         <viewControllerLayoutGuide type="bottom" id="5a5-3b-JNf"/>
@@ -205,20 +205,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Texture" translatesAutoresizingMaskIntoConstraints="NO" id="Xfq-Fp-X4x">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Texture" translatesAutoresizingMaskIntoConstraints="NO" id="Xfq-Fp-X4x">
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mbA-no-agf">
-                                <rect key="frame" x="20" y="115" width="280" height="201"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="77y-Hy-dqk">
+                                <rect key="frame" x="20" y="138" width="280" height="58"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.70517241379999995" green="0.27478448280000001" blue="0.32033943970000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="77y-Hy-dqk" firstAttribute="leading" secondItem="W7Y-my-CqJ" secondAttribute="leadingMargin" constant="4" id="3vJ-xp-7K0"/>
+                            <constraint firstItem="77y-Hy-dqk" firstAttribute="centerX" secondItem="Xfq-Fp-X4x" secondAttribute="centerX" id="8dz-MC-j8Y"/>
+                            <constraint firstItem="Xfq-Fp-X4x" firstAttribute="leading" secondItem="W7Y-my-CqJ" secondAttribute="leading" id="Hbm-nh-cvP"/>
+                            <constraint firstItem="5a5-3b-JNf" firstAttribute="top" secondItem="77y-Hy-dqk" secondAttribute="bottom" constant="323" id="UEm-uq-DHG"/>
+                            <constraint firstItem="77y-Hy-dqk" firstAttribute="top" secondItem="bec-vC-seT" secondAttribute="bottom" constant="74" id="a7c-nu-rOo"/>
+                            <constraint firstItem="Xfq-Fp-X4x" firstAttribute="top" secondItem="bec-vC-seT" secondAttribute="bottom" id="a8G-8X-WCj"/>
+                            <constraint firstItem="Xfq-Fp-X4x" firstAttribute="bottom" secondItem="5a5-3b-JNf" secondAttribute="top" id="nhB-vG-ecl"/>
+                            <constraint firstAttribute="trailing" secondItem="Xfq-Fp-X4x" secondAttribute="trailing" id="wyO-27-fLk"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="lc5-co-okt"/>
+                    <navigationItem key="navigationItem" title="Details" id="lc5-co-okt"/>
+                    <connections>
+                        <outlet property="line1" destination="77y-Hy-dqk" id="7J0-Uj-l6G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jik-Yn-q0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -246,6 +264,6 @@
     <resources>
         <image name="Texture" width="2880" height="1800"/>
         <image name="images" width="102" height="102"/>
-        <image name="movie" width="512" height="512"/>
+        <image name="movie" width="25" height="25"/>
     </resources>
 </document>
